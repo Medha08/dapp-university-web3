@@ -16,7 +16,7 @@ var contractAddress = '0xA3aBD91bE613B61a2ef979C590Db608b012A5867';
 
 //Get connection to SC with Web3 ie create instance of SC in web3  to further call functions of SC
 
-var contract = web3.eth.Contract(abi,contractAddress);
+var contract = new web3.eth.Contract(abi,contractAddress);
 console.log(contract.methods);//methods that this contract responds to
 console.log(contract.methods.name());//returns function name but doesn't call it 
 var call = async function (){
