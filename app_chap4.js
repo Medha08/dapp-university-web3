@@ -18,7 +18,7 @@ web3.eth.getTransactionCount(account1).then(_nonce => {
     const txObject = {
         nonce:'0x'+_nonce.toString(16),
         gasPrice:100000,
-        gasLimit:3000000,//Raise this 
+        gasLimit:3000000,//Raise this issue 
         data:data // bytecode of SC no "to" as we are broadcastinng the txn to entire network with data// data is the code of SC
     }
 

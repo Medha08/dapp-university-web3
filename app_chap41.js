@@ -3,7 +3,7 @@ var web3 = new Web3('https://ropsten.infura.io/v3/a55fba2fccc0495b97c84c0fed5889
 console.log(Web3)
 
 //interacting with Smart Contract
-const contractAddress = '0x8750c8259Be6c3eda86C245427c8326B148176BA'
+const contractAddress = '0xfd860b55e113e27cb76036f917f43aae36788e6b'
 const contractAbi = [
 	{
 		"constant": true,
