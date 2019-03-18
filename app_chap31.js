@@ -66,7 +66,7 @@ web3.eth.getTransactionCount(account1).then(_nonce => {
     console.log("raw",raw);
     var call = async function (){
         try {
-    // // //Broadcast the transaction
+    // Broadcast the transaction
       await web3.eth.sendSignedTransaction(raw,(err,txHash)=>{
          console.log("txHash",txHash);
       })}catch(err) {
