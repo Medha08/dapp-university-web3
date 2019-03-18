@@ -53,7 +53,7 @@ web3.eth.getTransactionCount(account1).then(_nonce => {
         gasLimit: 1000000,//web3.utils.toHex(21000),
         gasPrice:100000//web3.eth.gasPrice//web3.utils.toHex(web3.utils.toWei('10','gwei')) //*solved the issue 0x910266f8e995e2c1fe50ed68f4f8165f06f7583b97f27c9066d2de9c6444001f txn hash
     }
-    //console.log(txObject);
+    //console.log(txObject); 
     // //Sign the transaction // from field irrelevant as we are signing with private key and public key is representn of our private key so no need of from
     const tx = new Tx(txObject)//create Txn Object
     tx.sign(privateKey1) //Sign it
