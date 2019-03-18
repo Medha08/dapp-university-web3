@@ -17,7 +17,7 @@ web3.eth.sendTransaction({from: acct1, to: acct2, value: web3.utils.toWei('1','e
 //check balance of acc1
 web3.eth.getBalance(acct1,(err,result)=> { console.log(result)});
 
-//check balance of acc2
+//check balance of acc2 
 web3.eth.getBalance(acct2,(err,result)=> { console.log(result)});
 
 
